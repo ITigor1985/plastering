@@ -45,4 +45,39 @@
           <a class="header-top__call-link link" href="tel:+380682228557"> +38 (068) 222 85 57</a>
         </li>
       </ul>
+      <button type="button" class="contacts" data-modal-open>
+        <picture>
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/header-top/mobile/telephone@1x.webp 1x,
+              ./images/header-top/mobile/telephone@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ./images/header-top/mobile/telephone@1x.png 1x,
+              ./images/header-top/mobile/telephone@2x.png 2x
+            "
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./images/header-top/mobile/telephone@1x.webp 1x,
+              ./images/header-top/mobile/telephone@2x.webp 2x
+            "
+            type="image/webp"
+          />
+          <source
+            media="(max-width: 768px)"
+            srcset="
+              ./images/header-top/mobile/telephone@1x.png 1x,
+              ./images/header-top/mobile/telephone@2x.png 2x
+            "
+          />
+          <img class="header__telephone" loading="lazy" src="#" alt="Кнопка с телефонами" />
+        </picture>
+      </button>
 </div>
