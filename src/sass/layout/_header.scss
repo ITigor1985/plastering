@@ -1,0 +1,30 @@
+.header-mid{
+    
+    background-image: linear-gradient(rgba(54, 67, 113, 0.6), rgba(54, 67, 113, 0.6)),url(../images/header/mobile/header_mobile_img.jpg);
+    background-size: cover,cover;
+    background-position: center,center;
+    background-repeat: no-repeat,no-repeat;
+    min-height: 721px;
+}
+
+@media screen and (min-width:768px) {
+    .header-mid{
+    
+        background-image: url(../images/header/tablet/header_tablet_img.jpg);
+        
+        min-height: 567px;
+    }
+    
+}
+
+@media screen and (min-width:1440px) {
+    .header-mid{
+        position: relative;
+        background-image: url(../images/header/desktop/header_desktop_img.jpg);
+        
+        min-height: 812px;
+    }
+    
+      
+    
+}
