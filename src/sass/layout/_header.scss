@@ -21,6 +21,9 @@
 .header-mid__description{
     display: none;
 }
+.header-mid__arrow{
+    display: none;
+}
 
 .header-mid__form{
     min-width: 298px;
@@ -159,13 +162,10 @@
     .header-mid{
         position: relative;
         background-image: url(../images/header/desktop/header_desktop_img.jpg);        
-        min-height: 812px;
+        min-height: 815px;
         padding-top: 71px;
     }
-    .header-mid__adres-wrapper{
-        display: flex;
-        align-items: center;
-    }
+    
     .header-mid__adres{
         position: relative;
         display: flex;
@@ -191,19 +191,61 @@
     
 
     }
-
-
-
-
     .header-mid__title{
         @include font (72px, 700, 84px);
         margin-bottom: 45px;
+    }
+    .header-mid__description{
+        display: block;
+        @include font (24px, 700, 84px);
+        margin-bottom: 45px;
+    }
+    .header-mid__arrow{
+        display: block;
+        margin-left: 147px;
+        margin-bottom: 45px;
+    }
+    .header-mid__form{
+        position: relative;
+        min-width: 1239px;
+        padding-top: 71px;
+    }
+    .header-mid__form::before{
+        content: "";
+        position: absolute;
+        top: -200px;
+        right: -75px;
+        width: 597px;
+        height: 597px;
+        background-image: url(../images/header/desktop/car_desctop@1x.png);
+        background-repeat: no-repeat;
+    }
+    .header-mid__form-title{
+        @include font (32px, 900, 30px);
+        margin-bottom: 18px;
+    }
+    .header-mid__form-description{
+        width: 609px;
+        margin-bottom: 18px;
+    }
+
+    .wrapper{
+        display: flex;
+    }
+    .header-mid__form-inpute-wrapper{        
+        flex-direction: row;
+        margin-bottom: 0px;
+        & .header-mid__form-inpute{
+            margin-bottom: 0px;
+            margin-right: 19px;
         }
-     .header-mid__description{
-           display: block;
-           @include font (24px, 700, 84px);
-           margin-bottom: 120px;
-        }
+    }
+    .header-mid__form-button{
+        display: block;
+        min-width: 262px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
       
     
 }
