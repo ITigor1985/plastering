@@ -1,5 +1,5 @@
 .header-mid{
-    
+    position: relative;
     background-image: linear-gradient(rgba(54, 67, 113, 0.6), rgba(54, 67, 113, 0.6)),url(../images/header/mobile/header_mobile_img.jpg);
     background-size: cover,cover;
     background-position: center,center;
@@ -26,12 +26,16 @@
 }
 
 .header-mid__form{
+    position: absolute;
+    left: 50%;
+    top: 55%;
     min-width: 298px;
     max-width: 299px;
     padding: 18px 20px;
     background-color: #fff;
     border-radius: 9px;
     margin: 0 auto;
+    transform: translateX(-50%);
 }
 .header-mid__form-title{
     @include font (24px, 900, 30px);
@@ -80,7 +84,8 @@
 @media screen and (min-width:768px) {
     .header-mid{
         background-image: url(../images/header/tablet/header_tablet_img.jpg);
-        height: 567px;
+        background-size: 100% 567px;
+        min-height: 567px;
         padding-top: 225px;
     }
 
@@ -104,7 +109,7 @@
     .header-mid__form{
         position: relative;
         min-width: 614px;
-        margin: 0 auto;
+        margin: 0 0;
         height: 351px;
         padding: 0px 0px;
         background-color: #364371;
@@ -161,7 +166,8 @@
 @media screen and (min-width:1440px) {
     .header-mid{
         position: relative;
-        background-image: url(../images/header/desktop/header_desktop_img.jpg);        
+        background-image: url(../images/header/desktop/header_desktop_img.jpg);       
+        background-size: 100% 815px; 
         min-height: 815px;
         padding-top: 71px;
     }
