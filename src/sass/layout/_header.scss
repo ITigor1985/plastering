@@ -11,6 +11,7 @@
 .header-mid__title{
     @include font (48px, 700, 68px);
     margin-bottom: 10px;
+    padding-left: 20px;
     color: #fff;
 }
 .header-mid__description{
@@ -79,6 +80,7 @@
     .header-mid__title{
     @include font (64px, 700, 68px);
     margin-bottom: 45px;
+    padding-left: 0px;
     }
     .header-mid__description{
         display: block;
@@ -91,12 +93,25 @@
         background-color: #364371;
     }
     .header-mid__form{
-        min-width: 654px;
+        position: relative;
+        min-width: 614px;
         margin: 0 auto;
         height: 351px;
-        padding: 18px 20px;
+        padding: 0px 0px;
         background-color: #364371;
         border-radius: none;
+    }
+
+    .header-mid__form::before{
+        content: "";
+        position: absolute;
+        top: -50px;
+        right: -75px;
+        width: 456px;
+        height: 456px;
+        background-image: url(../images/header/tablet/car.png);
+    background-repeat: no-repeat;
+
     }
     .header-mid__form-title{
         @include font (24px, 900, 30px);
