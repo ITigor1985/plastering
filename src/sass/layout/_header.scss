@@ -8,6 +8,10 @@
     padding-top: 235px;
 }
 
+.header-mid__adres{
+    display: none;
+}
+
 .header-mid__title{
     @include font (48px, 700, 68px);
     margin-bottom: 10px;
@@ -77,6 +81,8 @@
         padding-top: 225px;
     }
 
+    
+
     .header-mid__title{
     @include font (64px, 700, 68px);
     margin-bottom: 45px;
@@ -139,35 +145,65 @@
     }
     .header-mid__form-inpute{
         width: 262px;
-        height: 40px;
-        border: 2px solid #2F4377;
-        padding-left: 11px;
-        border-radius: 9px;
-    }
-    .header-mid__form-inpute::placeholder{
-        font-style: italic;
-        @include font (13px, 300, 15px);
-        color: #2F4377;
-    }
+    }  
 
     .header-mid__form-button{
         display: block;
         min-width: 262px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        background: #FFC805;
-    border-radius: 9px;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 }
 
 @media screen and (min-width:1440px) {
     .header-mid{
         position: relative;
-        background-image: url(../images/header/desktop/header_desktop_img.jpg);
-        
+        background-image: url(../images/header/desktop/header_desktop_img.jpg);        
         min-height: 812px;
+        padding-top: 71px;
     }
+    .header-mid__adres-wrapper{
+        display: flex;
+        align-items: center;
+    }
+    .header-mid__adres{
+        position: relative;
+        display: flex;
+        @include font (24px, 700, 84px);
+        color: #FFC805;
+        padding-left: 93px;
+        margin-bottom: 91px;
+    }
+
+    .header-mid__adres::before{
+        content: "";
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 50%;
+        left: 0;
+        width: 65px;
+        height: 65px;
+        background-image: url(../images/header/desktop/adres.png);
+        transform: translateY(-50%);
+    background-repeat: no-repeat;
     
+
+    }
+
+
+
+
+    .header-mid__title{
+        @include font (72px, 700, 84px);
+        margin-bottom: 45px;
+        }
+     .header-mid__description{
+           display: block;
+           @include font (24px, 700, 84px);
+           margin-bottom: 120px;
+        }
       
     
 }
