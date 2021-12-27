@@ -18,7 +18,7 @@
 }
 .feature__list {
   @include font(12px, 400, 21px);
-  list-style: circle;
+  list-style: inside;
   list-style-position: inside;
   margin-bottom: 96px;
 }
