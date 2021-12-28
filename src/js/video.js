@@ -6,7 +6,7 @@
       video: document.querySelector('video')
     };
     
-    console.log(refs.video);
+    
     refs.openModalVideoBtn.addEventListener('click', toggleModal);
     refs.closeModalVideoBtn.addEventListener('click', toggleModal);
     refs.closeModalVideoBtn.addEventListener('click', stopVideo);
