@@ -1,0 +1,54 @@
+.services-and-prices__img-wrapper {
+  width: 100%;
+}
+
+.services-and-prices__img-wrapper img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .movies.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .services-and-prices__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(-1 * 28px);
+    margin-top: calc(-1 * 30px);
+  }
+  .services-and-prices__list-item {
+    .services-and-prices__list > & {
+      flex-basis: calc(100% / 2 - 28px);
+      margin-left: 28px;
+      margin-top: 30px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 0px;
+    }
+  }
+  .services-and-prices__img-wrapper {
+    width: 295px;
+    height: 166px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .services-and-prices__list {
+    margin-left: calc(-1 * 22px);
+    margin-top: calc(-1 * 84px);
+  }
+  .services-and-prices__list-item {
+    .services-and-prices__list > & {
+      flex-basis: calc(100% / 3 - 22px);
+      margin-left: 22px;
+      margin-top: 84px;
+    }
+  }
+
+  .services-and-prices__img-wrapper {
+    width: 394px;
+    height: 394px;
+  }
+}
