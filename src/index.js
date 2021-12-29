@@ -3,5 +3,5 @@ import './sass/main.scss';
 
 import './js/backdrop';
 import './js/video';
-import './js/price';
+
 import './js/faq';
