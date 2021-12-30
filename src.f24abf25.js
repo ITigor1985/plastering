@@ -6,9 +6,11 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 (()=>{const e={openModalBtn:document.querySelector("[data-modal-open]"),closeModalBtn:document.querySelector("[data-modal-close]"),modal:document.querySelector("[data-modal]")};function o(){e.modal.classList.toggle("is-shown")}e.openModalBtn.addEventListener("click",o),e.closeModalBtn.addEventListener("click",o)})();
 },{}],"HybV":[function(require,module,exports) {
 (()=>{const e={openModalVideoBtn:document.querySelector(".feature__button"),closeModalVideoBtn:document.querySelector("[data-modal-close-video]"),modalVideo:document.querySelector("[data-video]"),video:document.querySelector("video")};function o(){e.modalVideo.classList.toggle("is-shown")}e.openModalVideoBtn.addEventListener("click",o),e.closeModalVideoBtn.addEventListener("click",o),e.closeModalVideoBtn.addEventListener("click",function(){e.video.pause(),e.video.currentTime=0})})();
+},{}],"cDEs":[function(require,module,exports) {
+$(document).ready(function(){const o=document.body.clientWidth;o>=768&&o<=1440&&$(".work__list").slick({infinite:!1,dots:!1,arrows:!1,slidesToShow:5,slidesToScroll:5})});
 },{}],"DnZU":[function(require,module,exports) {
 const c=document.querySelectorAll(".faq");c.forEach(c=>{c.addEventListener("click",function(){c.classList.toggle("active")})});
 },{}],"Focm":[function(require,module,exports) {
-"use strict";require("material-icons/iconfont/filled.css"),require("./sass/main.scss"),require("./js/backdrop"),require("./js/video"),require("./js/faq");
-},{"material-icons/iconfont/filled.css":"N8cg","./sass/main.scss":"clu1","./js/backdrop":"dE7Y","./js/video":"HybV","./js/faq":"DnZU"}]},{},["Focm"], null)
-//# sourceMappingURL=/plastering/src.3a249661.js.map
+"use strict";require("material-icons/iconfont/filled.css"),require("./sass/main.scss"),require("./js/backdrop"),require("./js/video"),require("./js/slick"),require("./js/faq");
+},{"material-icons/iconfont/filled.css":"N8cg","./sass/main.scss":"clu1","./js/backdrop":"dE7Y","./js/video":"HybV","./js/slick":"cDEs","./js/faq":"DnZU"}]},{},["Focm"], null)
+//# sourceMappingURL=/plastering/src.f24abf25.js.map
