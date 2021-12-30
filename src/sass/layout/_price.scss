@@ -55,6 +55,10 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+  .services-and-prices__title {
+    @include font(36px, 700, 42px);
+    margin-bottom: 80px;
+  }
 
   .services-and-prices__list {
     display: flex;
@@ -80,6 +84,26 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .services-and-prices {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  .services-and-prices__title {
+    @include font(48px, 700, 56px);
+    margin-bottom: 100px;
+  }
+
+  .services-and-prices__list-item-deskription {
+    @include font(20px, 400, 26px);
+    margin-bottom: 15px;
+  }
+  .services-and-prices__list-item-cost {
+    @include font(20px, 700, 19px);
+  }
+  .services-and-prices__list-item-wrapper {
+    justify-content: space-around;
+  }
+
   .services-and-prices__list {
     margin-left: calc(-1 * 22px);
     margin-top: calc(-1 * 84px);
