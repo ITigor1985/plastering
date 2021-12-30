@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "data.js": "^0.12.11",
-    "material-icons": "^1.10.4"
+    "material-icons": "^1.10.4",
+    "slick-carousel": "^1.8.1"
   }
 }
