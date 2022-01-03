@@ -1,12 +1,12 @@
 $(document).ready(function () {
     
-      $('.gallery__list').slick({
-         centerMode: true,
+      $('.gallery__list').slick({         
         
-        speed: 300,
-        slidesToShow: 1,
-        arrows: false,
+        slidesToShow: 2,
         slidesToScroll: 1,
+        adaptiveHeight: true,
+        speed: 1000,
+        easing: 'ease'
   
       });
     

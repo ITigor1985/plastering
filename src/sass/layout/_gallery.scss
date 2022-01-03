@@ -1,11 +1,90 @@
-.gallery__list {
+/* Слайдер */
+.slick-slider {
+}
+/* Ограничивающая оболочка */
+.gallery__list .slick-list {
+  overflow: hidden;
+}
+/* Лента слайдов */
+.gallery__list .slick-track {
   display: flex;
   justify-content: center;
+  align-items: flex-start;
 }
-@media screen and (min-width: 1440) {
-  .gallery__img-wrapper {
-    display: flex;
-    justify-content: center;
+
+/* Слайд */
+.slick-slide {
+}
+/* Слайд активный */
+.slick-slide.slick-active {
+}
+/* Слайд основной */
+.slick-slide.slick-current {
+}
+/* Слайд по центру */
+.slick-slide.slick-center {
+}
+
+/* Стрелка */
+.slick-arrow {
+}
+/* Стрелка влево */
+.slick-arrow.slick-prev {
+}
+/* Стрелка вправо */
+.slick-arrow.slick-next {
+}
+/* Стрелка не активная */
+.slick-arrow.slick-disables {
+}
+
+/* Конкретный слайдер */
+.gallery__list {
+  position: relative;
+}
+.gallery__list .slick-arrow {
+  position: absolute;
+  top: 100%;
+  z-index: 10;
+}
+.gallery__list .slick-arrow.slick-prev {
+  display: none !important;
+}
+.gallery__list .slick-arrow.slick-next {
+  right: 0;
+}
+
+.gallery__item {
+}
+.gallery__item.slick-center {
+}
+
+.slick-track {
+  overflow: hidden;
+  text-align: center;
+}
+
+@media screen and(min-width: 768px) {
+  .slick-track .gallery__item.slick-slide.slick-active img {
+    width: 290px;
+    height: 170px;
+  }
+  .gallery__item.slick-slide.slick-current.slick-active img {
+    width: 309px;
+    height: 270px;
+  }
+}
+
+@media screen and(min-width: 1440px) {
+  img {
+    max-width: 578px;
+  }
+  .slick-track .gallery__item.slick-slide.slick-active img {
+    width: 529px;
+    height: 253px;
+  }
+  .gallery__item.slick-slide.slick-current.slick-active img {
+    height: 384px;
     width: 578px;
   }
 }
