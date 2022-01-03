@@ -1,0 +1,11 @@
+.gallery__list {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (min-width: 1440) {
+  .gallery__img-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 578px;
+  }
+}

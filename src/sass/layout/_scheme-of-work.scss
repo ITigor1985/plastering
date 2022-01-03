@@ -42,14 +42,14 @@
     @include font(36px, 700, 42px);
     margin-bottom: 80px;
   }
-  .slick-list {
+  .work .slick-list {
     padding: 40px;
     padding-right: 60px;
   }
-  .slick-list.draggable {
+  .work .slick-list.draggable {
     margin-left: -20px;
   }
-  .slick-track {
+  .work .slick-track {
     display: flex;
     align-items: center;
   }
