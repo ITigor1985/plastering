@@ -65,13 +65,18 @@
 }
 
 @media screen and(min-width: 768px) {
+  .slick-track .gallery__item.slick-slide.slick-active {
+    margin-right: 10px;
+    margin-left: 10px;
+  }
   .slick-track .gallery__item.slick-slide.slick-active img {
-    width: 290px;
+    width: 309px;
     height: 170px;
   }
   .gallery__item.slick-slide.slick-current.slick-active img {
     width: 309px;
     height: 270px;
+    margin-right: 10px;
   }
 }
 
