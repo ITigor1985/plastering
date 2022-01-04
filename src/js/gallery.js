@@ -4,10 +4,18 @@ $(document).ready(function () {
         
         slidesToShow: 2,
         slidesToScroll: 1,
-        adaptiveHeight: true,
+        
         speed: 1000,
-        easing: 'ease'
-  
+        easing: 'ease', 
+        responsive: [{
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+
+        ]
       });
     
   });

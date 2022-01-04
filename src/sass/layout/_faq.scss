@@ -50,6 +50,9 @@ svg {
 }
 
 @media screen and (min-width: 768px) {
+  .faqs {
+    padding-top: 30px;
+  }
   .faq {
     max-width: 618px;
     margin: 0 auto 18px;
@@ -67,6 +70,9 @@ svg {
 }
 
 @media screen and (min-width: 1440px) {
+  .faqs {
+    padding-top: 75px;
+  }
   .faq {
     max-width: 807px;
     margin: 0 auto 20px;
