@@ -1,5 +1,6 @@
-document.addEventListener('DOMContetntloaded', function(){
-    const form = document.getElementById('form');
+
+    const form = document.querySelector('#form');
+    console.log(form);
     form.addEventListener('submit', formSend);
 
     async function formSend(e) {
@@ -33,4 +34,3 @@ document.addEventListener('DOMContetntloaded', function(){
         input.parentElement.classList.remove('_error');
         input.classList.remove('_error');
     }
-})

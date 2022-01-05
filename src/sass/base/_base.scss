@@ -23,9 +23,9 @@ body {
   color: var(--text-color);
   transition: all 250ms ease-in-out;
 }
-body::-webkit-scrollbar {
-  width: 0 !important;
-}
+// body::-webkit-scrollbar {
+//   width: 0 !important;
+// }
 picture,
 svg {
   display: block;
