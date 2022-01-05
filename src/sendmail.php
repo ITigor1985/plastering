@@ -22,7 +22,7 @@
         $body.='<p><strong>Телефон:</strong> '.$_POST['telephone'].'</p>';
     }
 
-    if(!mail->send()){
+    if(!$mail->send()){
         $message = 'Ошибка';
     } else {
         $message = 'дынные отправлены';
