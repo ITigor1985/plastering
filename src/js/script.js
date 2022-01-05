@@ -8,6 +8,25 @@
 
         let error = formValidate(form);
 
+        let formData = new FormData(form);
+
+
+        if(error === 0){
+            let response = await fetch('sendmail.php', {
+                method: 'POST',
+                body: formData
+            });
+            if(response.ok){
+                let result = await response.json();
+                alert(result.message);                
+                form.reset();
+            }else{
+                alert("Ошибка");
+            }
+        }else{
+          alert("Заполните обязательные поля");
+        }
+
     }
 
     function formValidate(form){
@@ -24,6 +43,7 @@
             }
 
         }
+        return error;
     }
 
     function formAddError(input){
