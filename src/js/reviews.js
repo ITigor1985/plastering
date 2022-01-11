@@ -17,9 +17,7 @@ const windowWidth = document.body.clientWidth;
     descriptions.forEach(description => {
       // let styleDescription = window.getComputedStyle(description, null).getPropertyValue("height");
       let styleDescription = description.clientHeight;
-      console.log(windowWidth);
-      console.log(styleDescription);
-      console.log(description)
+     
       if((windowWidth <= 767 && parseInt(styleDescription) >= 173)) {
         description.style.height="172px";
         description.style.overflow="auto";
