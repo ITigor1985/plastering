@@ -43,11 +43,19 @@
   width: 259px;
   padding: 10px 78px;
   @include font(16px, 500, 25px);
-  background-color: rgb(255, 200, 5);
+  background: #ea7c21;
+  color: #fff;
   border-radius: 9px;
   border: none;
   margin-left: 0;
   margin-right: 0;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:active {
+    background: #ffc805;
+    color: #000;
+    box-shadow: inset 3px 4px 6px rgba(0, 0, 0, 0.25), inset 5px 6px 10px #ea7c21;
+  }
 }
 .form-section .form {
   margin: 0 auto;

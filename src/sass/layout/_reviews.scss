@@ -81,6 +81,11 @@
 }
 
 @media screen and(min-width:768px) {
+  .reviews__title {
+    @include font(36px, 700, 42px);
+    margin-bottom: 60px;
+  }
+
   .reviews__list .slick-slide {
     display: flex;
     justify-content: center;
@@ -136,6 +141,14 @@
   }
 }
 @media screen and(min-width: 1440px) {
+  .reviews {
+    padding-top: 40px;
+    padding-bottom: 80px;
+  }
+  .reviews__title {
+    @include font(48px, 700, 56px);
+    margin-bottom: 80px;
+  }
   .reviews__list-item {
     width: 1000px;
     margin: 0 auto;
