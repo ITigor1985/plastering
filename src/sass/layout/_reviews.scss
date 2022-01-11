@@ -48,3 +48,36 @@
 .reviews__review {
   @include font(14px, 300, 19px);
 }
+
+@media screen and(min-width:768px) {
+  .reviews__list-item {
+    display: flex;
+  }
+  .reviews__list-item-foto {
+    position: static;
+    left: 0%;
+    transform: translate(0%, 0%);
+  }
+  .reviews__foto-and-name {
+    display: flex;
+    align-items: center;
+  }
+  .reviews__foto-and-name {
+    padding-top: 24px;
+    padding-bottom: 20px;
+    border-left: none;
+    border-right: none;
+    padding-left: 27px;
+  }
+  .reviews__review-wrapper {
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    border-end-start-radius: 0px;
+    border-end-end-radius: 0px;
+    padding: 0 11px 42px 27px;
+  }
+  .reviews__name-type-work-wrapper {
+    padding-left: 10px;
+  }
+}
