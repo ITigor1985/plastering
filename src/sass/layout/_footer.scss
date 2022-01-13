@@ -145,6 +145,9 @@
 }
 
 @media screen and(min-width:1440px) {
+  .footer {
+    padding-bottom: 50px;
+  }
   .footer-container.container {
     display: flex;
     align-items: center;
@@ -168,7 +171,7 @@
   .copyright {
     @include font(18px, 24px);
     position: absolute;
-    bottom: 30px;
+    bottom: 0px;
     right: 400px;
     text-align: left;
   }
